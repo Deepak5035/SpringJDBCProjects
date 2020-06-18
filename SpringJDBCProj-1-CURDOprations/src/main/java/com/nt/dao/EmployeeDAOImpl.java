@@ -15,6 +15,7 @@ static final String UPDATE_EMP="INSERT INTO EMP (EMPNO,ENAME,SAL,JOB,DEPTNO) VAL
      JdbcTemplate jt=null;
 
 	public EmployeeDAOImpl(JdbcTemplate jt) {
+		System.out.println("EmployeeDAOImpl.EmployeeDAOImpl()");
 		this.jt = jt;
 	}
 
